@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea!!!!!!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        header{
+            width: 100%;
+            height:100vh;
+            background-image: url("walpaper.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+       h1{
+        text-align: center;
+        background-color: blanchedalmond;
+        border: ridge;
+        border-radius: 1000px;
+        margin-top: 0px;
+        margin-left: 400px;
+        width: 500px;
+        height: 20px;
+        padding: 20px;
+        font-style: italic;
+        text-decoration: wavy;
+
+                 }
+        #see{
+            background-color: rgb(151, 55, 55);
+            display: flex;
+
+            
+        }
+        #pic{
+            height: auto;
+            width: 200px;
+            align-self: center;
+        }
+        #pic2{
+            height: 200;
+            width: 400px;
+           
+         }
+         #see1{
+            display:flex;
+            flex-direction: row;
+         }
+         #see2{
+            display:flex;
+            flex-direction: column;
+         }
+         #button{
+            top: 20px;
+            background-color: lightcoral;
+            border-radius: 10px;
+            height: 100px;
+            width: 100px;
+            color: black;
+            margin-left: 20px;
+            
+         }
+         #icons{
+            display: flex;
+            flex-direction: flex row;
+            justify-content: space-around;
+
+         }
+         #see5{
+            background-color: beige;
+            width: 200px;
+            height: 100px;
+            margin-left: 20px;
+            border:ridge;
+            border-color: #b1117c;
+            border-radius: 10px ;
+         }
+         #h3{
+            text-align: center;
+            text-decoration: double;
+         }
+         #see4{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+         }
+         h4{
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+             font-style: italic;
+             background-color: burlywood;
+        }
+        #see6{
+            
+            background-image: url("data:image/jpeg;base64,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");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 350px;
+            height:450px ;
+            text-align: center;
+
+        }
+        #final{
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            grid-gap:100px;
+            top:200px;
+        }
+
+ 
+
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <div id="see">
+            
+<h1>Infused with love and happiness.</h1>
+
+<img id="pic"  src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=630/uploads/users/1631/posts/41353/image-upload/Screenshot_2022_05_11_at_11_19_21_pm_copy.jpg"> 
+
+
+</div>
+<div id="final">
+ <div id="see4">
+
+    <input type="button" id="button" value="More Info">
+ <div id="see5">
+    <h3>    FOLLOW US  </h3>
+    <div id="icons">
+        <i class="fa-brands fa-instagram fa-beat" style="color: #b1117c;"></i>
+        <i class="fa-brands fa-whatsapp fa-beat" style="color: #17d369;"></i>
+        <i class="fa-brands fa-facebook fa-beat" style="color: #2c6ddd;"></i>
+    </div>
+ </div>
+ </div>
+ <div id="see6">
+    <h4>Wanna grab Free sample of our Magical Product</h4>
+    <form>
+        Email:
+        <input type:"Email" >
+        <br>
+        <br>
+        <br>
+        password:
+        <input type="password" >
+        <br>
+        <br>
+
+        <input type="button" id="button1" value=" Grab Here">
+        <h6>Today’s good mood is sponsored by tea.</h6>
+
+        </form>
+ </div>
+<div id="see2">
+    <div id="see1">
+    <i class="fa-solid fa-mug-hot fa-flip" style="color: #511f1f;"></i>
+ 
+    <h2>Your mood.....Our Chai....</h2>
+    </div>
+
+    <img  id="pic2" src="https://i.pinimg.com/564x/6c/c3/b1/6cc3b18db4a0767d294c51bc35592c64.jpg">
+    
+</div>
+
+ </div>
+
+</div>
+
+</header>
+
+    
+
+
+</body>
+    
+    
+</body>
+</html>
