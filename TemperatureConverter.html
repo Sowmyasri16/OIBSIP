@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature-conveter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        h1{
+           text-transform: uppercase;
+           font-family: 'Times New Roman', Times, serif;
+           font-weight: 200;
+           margin-top: 5px;;
+           font-size: 25px;
+           font-weight: bold ;
+           padding: 50px;
+           margin-left: 65px;
+           text-align: center;
+        }
+        
+        header{
+         
+            background-color: azure;
+            background-image: url("data:image/jpeg;base64,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");
+                background-repeat: no-repeat;
+                background-size: cover;
+               
+        }
+
+        #one{
+            height: 180px;
+            width: 380px;
+        }
+        main{
+            background-color: aqua;
+            background-image: url("https://wallpapers-clan.com/wp-content/uploads/2023/04/snow-ice-light-blue-wallpaper.jpg");
+            background-repeat: no-repeat;
+           
+            height:400px;
+
+        }
+        form{
+            font-family: 'Times New Roman', Times, serif;
+            font-size:x-large;
+            padding: 70px;
+            text-align: center;
+            
+            
+        }
+        #button{
+              margin-left: 20px;
+                  }
+        #three{
+            margin-left: 20px;
+        }
+        #output{
+            margin-left: 15px;
+            margin-bottom: 10px;
+            height: 20px;
+        }
+        #h3{
+            text-transform: uppercase;
+            margin-left:50px ;
+        }
+        #final{
+            margin-left: 400px;
+            border: ridge;
+            border-color: black;
+            width: 450px;
+        }
+    </style>
+        <script>
+            function convert()
+        {
+        var tempe= document.getElementById("two").value
+        calculate(tempe)
+        }
+        
+        function calculate(tempe)
+        { 
+            if(isNaN(tempe))
+            {
+                alert("not numeric")
+            }
+        if(document.getElementById("kel").checked)
+        {
+            var num1 =eval((tempe- 32) * 5 / 9)
+
+document.getElementById("output").value =num1+"°C"
+
+
+        }
+        else if(document.getElementById("cel").checked)
+           {
+
+            var num =eval((tempe * 9/5)+32)
+
+            document.getElementById("output").value =num+"°F"
+
+           }
+           else{
+                 alert("choose conversation")
+                  return false
+        }
+     }
+
+
+
+
+
+        </script>
+    
+    
+
+    
+</head>
+<body>
+    <div id="final">
+        <header>
+            <div id ="one">
+                <i class="fa-solid fa-temperature-high fa-flip fa-sm" style="color: #d0164e;"></i>
+                <h1>Temperature convertor </h1>
+            </div>
+        </header>
+        
+
+        <main>
+
+            <form>
+                
+                 Temperature <input type="text" id="two" >
+                
+                 <br>
+                 <br>
+                 <br>
+                 <div id="three">
+                 Celcius<input type="radio" name="Temp" id="cel" >
+                   
+                 Fahrenheit<input type="radio" name="Temp"  id="kel" >
+                </div>
+                 <br>
+                 <br>
+                 
+                 <input type="button" onclick="convert()" id="button" value="convert">
+                 <br>
+                 <br>
+                 
+                 <h3>Converted Temperature</h3>
+                 <input type="text" id="output">
+            </form>
+
+        </main>
+        
+    </div>
+    
+</body>
+</html>
